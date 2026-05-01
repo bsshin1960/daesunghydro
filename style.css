@@ -59,6 +59,27 @@ ul {
     align-items: center;
 }
 
+/* Contact Info (Header Right) */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #555;
+}
+.contact-info .divider {
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+}
+.contact-info .contact-name {
+    font-weight: 700;
+    color: #0056b3;
+}
+.contact-info .contact-item {
+    font-weight: 500;
+}
+
 .header-container {
     width: 100%;
     max-width: 1200px;
