@@ -681,14 +681,76 @@ ul {
 }
 
 @media (max-width: 768px) {
+    /* Header Stacking */
+    .header {
+        position: relative; /* Remove sticky to save screen height on mobile */
+    }
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    .header-left {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    .contact-info {
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-info .divider {
+        height: 12px;
+    }
     .nav ul {
-        display: none; /* simple mobile hide for now */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .nav a {
+        font-size: 14px;
+    }
+    
+    /* Hero Section (9:16 fit) */
+    .hero {
+        height: 100vh;
+        min-height: 600px;
     }
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
-    .about-grid, .products-grid {
-        grid-template-columns: 1fr;
+    .hero-content h2 {
+        font-size: 16px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+    
+    /* Grids */
+    .about-grid {
         flex-direction: column;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
